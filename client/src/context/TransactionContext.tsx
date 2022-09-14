@@ -146,6 +146,7 @@ export const TransactionProvider = ({ children } : { children: any }) => {
 
     useEffect(() => {
         checkIfWalletIsConnected();
+        getAllTransactions();
     }, [])
 
     const conttextType: ContextType = {
